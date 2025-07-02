@@ -37,8 +37,8 @@
 
 **How:**  
 - Calculated by: `2^(32 - prefix length) - 2`.
-- `/22` → `2^(10)` = 1024 → minus 2.
-- `/24` → `2^(8)` = 256 → minus 2.
+- `/22` → `2^(10) - 2` = 1022.
+- `/24` → `2^(8) - 2` = 254.
 
 ---
 
@@ -47,7 +47,6 @@
 **Answer:**  
 - **Split larger blocks** (`/22`, `/23`) into smaller subnets (`/25`, `/26`) that match real usage.
 - Combine low-usage hosts together.
-- Use VLANs or NAT if needed to minimize unused address space.
 
 **How:**  
 - Subnet mask math: smaller blocks = fewer wasted IPs.
