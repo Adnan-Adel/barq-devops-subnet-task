@@ -65,6 +65,14 @@ After running the tool, you’ll get these main output files:
 
 ---
 
+## 🛠️ Tech Stack
+
+- Python 3.10+
+- Libraries: `pandas`, `ipaddress`, `matplotlib`, `openpyxl`
+- Containerized using Docker
+
+---
+
 ## 🚀 How to Run
 
 **1. Build the Docker image**
@@ -79,11 +87,11 @@ docker build -t subnet-analyzer .
 docker run -v $PWD:/app subnet-analyzer
 ```
 
-✅ The `-v $PWD:/app` flag mounts your current folder into the container so that output files appear in your local directory.
+✅ The `-v $PWD:/app` flag mounts current folder into the container so that output files appear in local directory.
 
 ---
 
 ## 📹 Video Explanation
 
 A short video of me explaining the solution:  
-**➡️ [Watch the explanation](YOUR_VIDEO_LINK_HERE)**  
+**➡️ [Watch the explanation](https://drive.google.com/file/d/1jfyxC5LD9a84c4lTMqgeeI-40GEhMTeu/view?usp=sharing)**  
